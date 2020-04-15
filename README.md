@@ -1,8 +1,7 @@
 ---
-description: How does this work
+description: What you don't know can hurt you
 ---
 
-# Test
+# Lane Seppala's Knowledge Repository
 
-Contenty content
-
+I know some things.
