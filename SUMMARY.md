@@ -1,7 +1,6 @@
 # Lane's Knowledge Repository
 
 - Web Development
-  - React
+  - [React](web-development/react/README.md)
     * [Hooks](web-development/react/hooks.md)
-    * [Resources](web-development/react/resources.md)
     * [Testing Hooks](web-development/react/testing-hooks.md)

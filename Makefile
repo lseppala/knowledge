@@ -6,7 +6,6 @@ update: SUMMARY.md
 	done; git commit -a -m "$$changed" && git push
 
 
-
 # `book` is https://www.npmjs.com/package/gitbook-summary
 SUMMARY.md: book.json $(ALL_MD_FILES)
 	@book summary
