@@ -1,7 +1,6 @@
-# Table of contents
-
-- [Start](README.md)
+# Lane Seppala's Knowledge
 
 - React
-  - [Hooks](react/Hooks.md)
-  - [Testing Hooks](react/Testing\ Hooks.md)
+  * [Hooks](react/hooks.md)
+  * [Resources](react/resources.md)
+  * [Testing Hooks](react/testing-hooks.md)
