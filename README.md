@@ -1,5 +1,5 @@
 ---
-description: What you don't know can hurt you
+description: Knowledge is just the start to understanding
 ---
 
 # Lane Seppala's Knowledge Repository
