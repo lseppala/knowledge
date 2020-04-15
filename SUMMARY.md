@@ -1,6 +1,7 @@
-# Lane Seppala's Knowledge
+# Lane's Knowledge Repository
 
-- React
-  * [Hooks](react/hooks.md)
-  * [Resources](react/resources.md)
-  * [Testing Hooks](react/testing-hooks.md)
+- Web Development
+  - React
+    * [Hooks](web-development/react/hooks.md)
+    * [Resources](web-development/react/resources.md)
+    * [Testing Hooks](web-development/react/testing-hooks.md)
