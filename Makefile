@@ -1,4 +1,4 @@
-ALL_MD_FILES=$(shell find . -type file -name '*.md' | grep -v 'SUMMARY.md')
+ALL_MD_FILES=$(shell find . -type file -name '*.md' -print | sed 's/ /\\\ /g' |  grep -v 'SUMMARY.md')
 
 update: SUMMARY.md
 	@for i in `git add . && git diff --cached --name-only`; do\

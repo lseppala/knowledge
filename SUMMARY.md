@@ -12,7 +12,13 @@
 - Programming Language
   - [Go](programming-language/go/README.md)
     * [Basic Types](programming-language/go/basic-types.md)
+    * [Database Libraries And ORMs](programming-language/go/database-libraries-and-ORMs.md)
     * [Debugging](programming-language/go/debugging.md)
+    * [Go Modules](programming-language/go/go-modules.md)
+    * [Logging](programming-language/go/logging.md)
+    * [Terrible Things In Go](programming-language/go/terrible-things-in-Go.md)
+    * [Testing](programming-language/go/testing.md)
+    * [TUI Libraries](programming-language/go/TUI-libraries.md)
 - Web Development
   - [React](web-development/react/README.md)
     * [Hooks](web-development/react/hooks.md)
