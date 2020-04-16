@@ -1,7 +1,7 @@
 # Lane's Knowledge Repository
 
-- Ci Cd
-  * [Spinnaker](ci-cd/spinnaker.md)
+- Dev Ops
+  * [Spinnaker](dev-ops/spinnaker.md)
 - Linux
   * [Debugging](linux/debugging.md)
 - Management
@@ -10,6 +10,7 @@
 - [Observability](observability/README.md)
 - Programming Language
   - [Go](programming-language/go/README.md)
+    * [Basic Types](programming-language/go/basic-types.md)
     * [Debugging](programming-language/go/debugging.md)
 - Web Development
   - [React](web-development/react/README.md)
