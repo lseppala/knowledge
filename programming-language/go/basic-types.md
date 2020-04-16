@@ -8,7 +8,7 @@ returns the _pointer to T_
 Constants are only basic types (boolean, string, number) or named types of the
 basic types. Constants can appear in types, such as the length of an array type
 
-```
+```go
 const IPv4Len4 = 4
 
 var p [IPv4Len]byte
@@ -21,7 +21,7 @@ var p [IPv4Len]byte
 Arrays are fixed length, length must be declared or an ellipsis can be used with
 an initialization list
 
-```
+```go
 a := [...]int{1,2,3}
 b := [3]int{1,2,3}
 a = [4]int{1,2,, 4} // compile error
@@ -29,7 +29,7 @@ a = [4]int{1,2,, 4} // compile error
 
 Literal syntax can also used named incidices, for example:
 
-```
+```go
 type Currency int
 
 const (
@@ -62,4 +62,7 @@ elements of an underlying array.
 `make` creates a slice of a type, length, and capacity (capacity may be omitted,
 then capacity == length)
 
-The built-in function `copy` copies elements from one lice to another.
+The built-in function `copy` copies elements from one slice to another.
+
+The shortest way to make a slice from an array is `myArray[:]`. Useful when you
+have an array but a function takes a slice.
