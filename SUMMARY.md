@@ -12,7 +12,7 @@
 - Programming Language
   - [Go](programming-language/go/README.md)
     * [Basic Types](programming-language/go/basic-types.md)
-    * [Database Libraries And ORMs](programming-language/go/database-libraries-and-ORMs.md)
+    * [Database Libraries And ORM](programming-language/go/database-libraries-and-ORM.md)
     * [Debugging](programming-language/go/debugging.md)
     * [Go Modules](programming-language/go/go-modules.md)
     * [Logging](programming-language/go/logging.md)
