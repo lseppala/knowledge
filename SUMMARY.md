@@ -7,6 +7,7 @@
 - Management
   * [Hiring](management/hiring.md)
   * [Repairing Broken Teams](management/repairing-broken-teams.md)
+- [Neovim](neovim/README.md)
 - [Observability](observability/README.md)
 - Programming Language
   - [Go](programming-language/go/README.md)
