@@ -1,5 +1,5 @@
 ---
-description: Knowledge is just the start to understanding
+description:
 ---
 
 # Lane Seppala's Knowledge Repository
