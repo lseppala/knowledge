@@ -23,6 +23,8 @@
     * [Terrible Things In Go](programming-language/go/terrible-things-in-Go.md)
     * [Testing](programming-language/go/testing.md)
     * [TUI Libraries](programming-language/go/TUI-libraries.md)
+- Testing
+  * [Testing Categories](testing/testing-categories.md)
 - Web Development
   - [React](web-development/react/README.md)
     * [Hooks](web-development/react/hooks.md)
