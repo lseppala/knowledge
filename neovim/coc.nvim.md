@@ -1,6 +1,3 @@
-# coc.nvim
+“Conquer of Completion” is an ‘intellisense’ plugin for neovim using LSP (language server protocols) to provide documentation, autocompletion, errors, etc in neovim. It seems very powerful, but also large in scope and finicky to set up. It is implemented with an independent JS bundle and has it’s own extension functionality
 
-“Conquer of Completion” is an ‘intellisense’ plugin for neovim using LSP \(language server protocols\) to provide documentation, autocompletion, errors, etc in neovim. It seems very powerful, but also large in scope and finicky to set up. It is implemented with an independent JS bundle and has it’s own extension functionality
-
-Unfortunately, it seems neovim’s floating window feature \(used by COC\) inherits the window height setting I’ve used to minimize/maximize horizontal splits
-
+Unfortunately, it seems neovim’s floating window feature (used by COC) inherits the window height setting I’ve used to minimize/maximize horizontal splits
