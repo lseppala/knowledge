@@ -1,11 +1,8 @@
-Testing React hooks is difficult because hooks store state implicitly based on
-the component they were invoked in. In order to test hooks, you need to have
-some component (or a fake, component-like environment) in which to invoke the
-hook.
+# Testing Hooks
 
-The package
-[`@testing-library/react-hooks`](https://react-hooks-testing-library.com/usage/basic-hooks)
-provides the component-like environment for testing hooks in isolation
+Testing React hooks is difficult because hooks store state implicitly based on the component they were invoked in. In order to test hooks, you need to have some component \(or a fake, component-like environment\) in which to invoke the hook.
+
+The package [`@testing-library/react-hooks`](https://react-hooks-testing-library.com/usage/basic-hooks) provides the component-like environment for testing hooks in isolation
 
 ```typescript
 import { act, renderHook, cleanup } from "@testing-library/react-hooks";
@@ -21,3 +18,4 @@ await waitForNextUpdate();
 
 expect(result.current.someAttr).toBe(...);
 ```
+
