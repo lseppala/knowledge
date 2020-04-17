@@ -12,7 +12,7 @@ declarative-programming model.
 
 Variables are declared with the one of a few "flavors":
 
-```make
+```bash
 
 # Simple variable.
 SIMPLE_VAR := value
@@ -39,7 +39,7 @@ To reference a variable in the makefile, use the syntax `$(VARIABLE)` or
 
 Variables are simply expanded as text in the makefile. For example:
 
-```make
+```bash
 ECH = ech
 O = o
 
