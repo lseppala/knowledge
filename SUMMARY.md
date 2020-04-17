@@ -10,6 +10,8 @@
   * [Hiring](management/hiring.md)
   * [Repairing Broken Teams](management/repairing-broken-teams.md)
 - [Neovim](neovim/README.md)
+  * [coc.nvim](neovim/coc.nvim.md)
+  * [vista.vim](neovim/vista.vim.md)
 - [Observability](observability/README.md)
 - Programming Language
   - [Go](programming-language/go/README.md)
