@@ -17,10 +17,10 @@ off.
 
 It seemed like a really fragile way to specify and management dependencies. All
 systems become legacy systems after time, and managing dependency versions is
-crucial. And when new people leaving the team, it seemed like it could be a real
+crucial. And when new people join the team, it seemed like it could be a real
 headache to make sure everyone has identical build environments.
 
-> That's why you should use Docker! Docker docker docker! The only reason to
+> That's why you should use Docker! Docker Docker Docker! The only reason to
 > have a personal computer is to have a place to run Docker!
 
 Enough of that. How do I get started?
