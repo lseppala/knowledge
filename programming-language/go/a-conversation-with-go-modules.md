@@ -28,7 +28,9 @@ Enough of that. How do I get started?
 > Run `go mod init` in your repo!
 
 Uh. I've got the error,
-"`cannot determine module path for source directory, go-mad (outside GOPATH, module path must be specified)`"?
+
+`cannot determine module path for source directory, go-mad (outside GOPATH, module path must be specified)`
+
 I thought this was moving us past the GOPATH stuff?
 
 > Nope, it's still there! Try `go mod init github.com/username/projectname`
@@ -46,8 +48,8 @@ of 70% completion before they're abandoned. Is there a better way?
 > supported! Will it cause issues when people try to import your project?
 > Probably!
 
-That's great... oh! This is looking better. I've got a `go.mod` file! Is that
-where I specify dependencies?
+Something to worry about later, I suppose... oh! This is looking better. I've
+got a `go.mod` file! Is that where I specify dependencies?
 
 > It sure is!
 
@@ -68,7 +70,7 @@ dependencies into GOPATH, but now it installs it with Go Modules?
 > It still installs into the GOPATH, but now it installs the source into
 > `$GOPATH/pkg/mod/package-name@version`
 
-Oh, great! There's versions now. How do I install a specific version?
+Oh, wonderful! There's versions now. How do I install a specific version?
 
 > `go get path/package-name@version`
 
