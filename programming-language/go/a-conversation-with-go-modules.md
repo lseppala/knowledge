@@ -2,8 +2,8 @@
 
 ## Introduction
 
-Go! I hear you finally an officially-supported dependency management system!
-Built right in, no external tools with spotty support.
+Golang! I hear you finally have an officially-supported dependency management
+system! Built right in, no external tools with spotty support.
 
 > Yup! They're called Go Modules, and after nearly 7 (!) years of mucking around
 > in your file system with a magic path and environment variables, we've got
