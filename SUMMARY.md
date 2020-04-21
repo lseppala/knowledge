@@ -16,6 +16,7 @@
 - [Observability](observability/README.md)
 - Programming Language
   - [Go](programming-language/go/README.md)
+    * [A Conversation With Go Modules](programming-language/go/a-conversation-with-go-modules.md)
     * [Basic Types](programming-language/go/basic-types.md)
     * [Database Libraries And ORM](programming-language/go/database-libraries-and-ORM.md)
     * [Debugging](programming-language/go/debugging.md)

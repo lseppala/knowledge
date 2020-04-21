@@ -1,0 +1,110 @@
+# Pain and Go modules
+
+This is a catharsis of my deep frustration at dependency management in Go. This
+is based on my own experience and understanding of the state of Go modules and
+dependency management as of April 2020. The purpose is to explain, and hopefully
+get some feedback on what I've missed in my understanding of how Go modules and
+dependency management work.
+
+## My history with dependency management and build tools
+
+On my first introduction to Go, I was immediately turned off by managing
+dependencies with the GOPATH. GOPATH seemed equal parts magic and.
+
+My first experience with modern dependency management and build-chain was with
+Maven in Java. While complex, verbose, and dreadfully slow, it was my first
+experience with a fully reproducible, deterministic build system that could be
+generally relied upon to build your software the same every time (or, as long as
+the in-house installation of Artifactory remained standing). I was briefly
+introduced to Gradle, which simplified the complexity and verbosity of maven,
+and then sbt ('Scala Build Tool'). At the time, sbt was relevatory.
+
+Next came Ruby, with Ruby gems and all of the infrastructure that needed to be
+built around it: bundler, rvm, (ruby version manager), rbenv, and many others.
+The project I learned to swim: for several of our micro-service components
+(before micro-services were a thing), we weren't only stuck on a specific
+version of the ruby interpreter, but a _specific patch_ of ruby. One of our
+dependencies relied on a particular bug that was introduced and then promptly
+fixed in the following patch. If I remember correctly, it was something like
+`1.9.3 patch 247` or something equally ridiculous. It was chaos, and our team
+was in the middle of upgrading our difference services to be less. At any given
+time, I would bounce between projects with no less than 3 different version of
+Ruby.
+
+This is when I developed a strong appreciate for hermetic builds. Nothing about
+how your particular machine is set up should determine how the software gets
+built. "Works on my machine" is an atrocity. The single great
+
+Perhaps from being so scarred from Ruby, I went into the deep-end of dependency
+management. I had changed teams and was placed on a green-field project in
+charge of infrastructure, and I took the opportunity to learned just about every
+esoteric build tool and configuration management software solution I could. I
+was absolutely delighted with leingenin, the Clojure build tool, but we required
+a solution that would work with more than just the JVM. I found Nix.
+
+Nix is a deterministic build-system. What does that mean? Every time you build,
+you are guaranteed to build the same. How can you tell? Nix computes SHA256
+hashes based on the binary representation of your build artifact _as well as all
+of that build's dependencies_ (including interpreter versions). You might be
+able to compute a hash for a single, statically linked binary or a tarball of
+all of your resources. But if that program requires any external resource to
+run—be it an interpreter, shared dynamic libraries, or anything else—any
+guarantee you have that building it on your machine will be the same as building
+on another machine will go out the window.
+
+I was pulled back from the brink after changing companies to where we wrote
+Haskell. I brought with me a whole Nix-based Haskell dependency management
+strategy that required knowing the Nix expression language that could reliably
+build
+
+Even Perl has a decent dependency management toolchain. CPAN is centralized
+repository of every single library you could want. While it naively operates as
+a install-globally dependency management system, `cpanm` gives you project-level
+isolation and `carton` provides a declarative file for listing and pinning all
+of your versions. While Perl gets some semi-deserved reputation for being
+antiquated, I found dependency management in Perl to be an overall pleasure.
+
+## Go
+
+Go is a different story.
+
+GOPATH turned me off of Go for years. I was first introduced to Go while I was
+in the middle of fighting multiple versions of the Ruby interpreter, and a
+central directory of all dependencies, unversioned, sounded like a personal hell
+to me (and still does). I understood and appreciated the cleverness of using the
+file system hierarchy and environment variables to manage and manipulate, but it
+seemed like a recipe for disaster. Different developers could too easily have
+different versions of dependencies. Or slightly (mis)configured environments.
+One of the developers works on a Go side-project using the latest version of a
+crucial dependency and all of their local builds the next day are screwed. All
+systems become legacy systems given time. I don't envy people who need to
+maintain legacy Go programs.
+
+I've thought it ironic that one of Go's biggest strengths—that it compiled
+programs into single, statically linked binaries (including the run-time!) that
+could be deployed on a bare system—was completely wasted with the advent of
+container-ization that was built on Go! Why do you need to ship a multi-gigabyte
+Docker image when all it runs is a static binary that could run on any system
+that can simply load it into memory? In retrospect, it wasn't because Docker was
+necessary to run Go programs, it's because Docker was necessary to reproducibly
+build Go programs with any level of confidence.
+
+I also hate programs that mess with my filesystem. My filesystem is mine, leave
+it alone!
+
+## Go Modules
+
+In the Go module world, how do you manage Go dependencies?
+
+`go mod init`
+
+Oh, great! That's easy. And look, now I have a `go.mod` file, fancy!
+
+How do I install a new dependency?
+
+`go get path/to/your/dependency`
+
+...excuse me? Isn't that how you'd install dependencies using the GOPATH? Why
+are we using the same syntax for substantially different semantics?
+
+But that's not
