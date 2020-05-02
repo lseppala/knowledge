@@ -7,6 +7,7 @@
 - [GNU Make](GNU-make/README.md)
 - Linux
   * [Debugging](linux/debugging.md)
+- [Low Level Programming](low-level-programming/README.md)
 - Management
   * [Hiring](management/hiring.md)
   * [Repairing Broken Teams](management/repairing-broken-teams.md)
@@ -25,8 +26,10 @@
     * [Terrible Things In Go](programming-language/go/terrible-things-in-Go.md)
     * [Testing](programming-language/go/testing.md)
     * [TUI Libraries](programming-language/go/TUI-libraries.md)
+- [Size Coding](size-coding/README.md)
 - Testing
   * [Integration](testing/integration.md)
+  * [Move Fast And Don T Break Things](testing/move-fast-and-don't-break-things.md)
   * [Testing Categories](testing/testing-categories.md)
 - Web Development
   - [React](web-development/react/README.md)
