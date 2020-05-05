@@ -29,7 +29,7 @@
 - [Size Coding](size-coding/README.md)
 - Testing
   * [Integration](testing/integration.md)
-  * [Move Fast And Don T Break Things](testing/move-fast-and-don't-break-things.md)
+  * [Move Fast Without Breaking Things](testing/move-fast-without-breaking-things.md)
   * [Testing Categories](testing/testing-categories.md)
 - Web Development
   - [React](web-development/react/README.md)
