@@ -29,7 +29,7 @@ Enough of that. How do I get started?
 
 Uh. I've got the error,
 
-`cannot determine module path for source directory, go-mad (outside GOPATH, module path must be specified)`
+`cannot determine module path for source directory, go-mod (outside GOPATH, module path must be specified)`
 
 I thought this was moving us past the GOPATH stuff?
 
@@ -98,7 +98,7 @@ install a newer version of a tool I use.
 
 ## `go.mod` and `go.sum`
 
-What is the `go.sum` file?
+What is the `go.mod` file?
 
 > This is where all of your dependencies and version are specified. If something
 > is commented with `indirect`, it's a transitive dependency or something you
@@ -122,8 +122,9 @@ unintended side-effect.
 
 > I also do the same with `go test`!
 
-Oh boy, that sounds like it might bite me later. What's this `go.sum` file? Is
-this like a version lock-file that I'm used to from other languages?
+Oh boy, that sounds like it might bite me later (_narrator: it does_). What's
+this `go.sum` file? Is this like a version lock-file that I'm used to from other
+languages?
 
 > Hahahah! You silly goose, of course not! It's a file of cryptographic hashes
 > of the dependencies you've installed. It's to make sure the dependency you
